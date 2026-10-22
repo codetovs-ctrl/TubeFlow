@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: tubeflow
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
